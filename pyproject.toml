@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "repl-nix-rainfallpredsys"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "repl_nix_rainfallpredsys"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+joblib = "^1.4.2"
+pandas = "^2.2.2"
+scikit-learn = "^1.5.1"
+scipy = "^1.14.0"
+xgboost = "^2.1.1"
+flask = "^3.0.3"
+plotly = "^5.23.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

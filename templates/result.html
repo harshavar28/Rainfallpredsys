@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Prediction Result</h2>
+        <div class="card">
+            <div class="card-body">
+                <p><strong>Location:</strong> {{ location }}</p>
+                <p><strong>Year:</strong> {{ year }}</p>
+                <p><strong>Month:</strong> {{ month }}</p>
+                <p><strong>Predicted Rainfall:</strong> {{ predicted_rainfall }} mm</p>
+                <a href="{{ url_for('predict') }}" class="btn btn-secondary btn-block">Predict Again</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

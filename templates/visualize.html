@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Visualize Data</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Data Visualization</h2>
+        <form action="{{ url_for('visualization_result') }}" method="post">
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <select class="form-control" id="location" name="location" required>
+
+                    <option value="ANDAMAN & NICOBAR ISLANDS">ANDAMAN & NICOBAR ISLANDS</option>
+                    <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+                    <option value="ASSAM & MEGHALAYA">ASSAM & MEGHALAYA</option>
+                    <option value="NAGA MANI MIZO TRIPURA">NAGA MANI MIZO TRIPURA</option>
+                    <option value="SUB-HIMALAYAN WEST BENGAL & SIKKIM">SUB-HIMALAYAN WEST BENGAL & SIKKIM</option>
+                    <option value="GANGETIC WEST BENGAL">GANGETIC WEST BENGAL</option>
+                    <option value="ORISSA">ORISSA</option>
+                    <option value="JHARKHAND">JHARKHAND</option>
+                    <option value="BIHAR">BIHAR</option>
+                    <option value="EAST UTTAR PRADESH">EAST UTTAR PRADESH</option>
+                    <option value="WEST UTTAR PRADESH">WEST UTTAR PRADESH</option>
+                    <option value="UTTARAKHAND">UTTARAKHAND</option>
+                    <option value="HARYANA DELHI & CHANDIGARH">HARYANA DELHI & CHANDIGARH</option>
+                    <option value="PUNJAB">PUNJAB</option>
+                    <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                    <option value="JAMMU & KASHMIR">JAMMU & KASHMIR</option>
+                    <option value="WEST RAJASTHAN">WEST RAJASTHAN</option>
+                    <option value="EAST RAJASTHAN">EAST RAJASTHAN</option>
+                    <option value="WEST MADHYA PRADESH">WEST MADHYA PRADESH</option>
+                    <option value="EAST MADHYA PRADESH">EAST MADHYA PRADESH</option>
+                    <option value="GUJARAT REGION">GUJARAT REGION</option>
+                    <option value="SAURASHTRA & KUTCH">SAURASHTRA & KUTCH</option>
+                    <option value="KONKAN & GOA">KONKAN & GOA</option>
+                    <option value="MADHYA MAHARASHTRA">MADHYA MAHARASHTRA</option>
+                    <option value="MATATHWADA">MATATHWADA</option>
+                    <option value="VIDARBHA">VIDARBHA</option>
+                    <option value="CHHATTISGARH">CHHATTISGARH</option>
+                    <option value="COASTAL ANDHRA PRADESH">COASTAL ANDHRA PRADESH</option>
+                    <option value="TELANGANA">TELANGANA</option>
+                    <option value="RAYALASEEMA">RAYALASEEMA</option>
+                    <option value="TAMIL NADU">TAMIL NADU</option>
+                    <option value="COASTAL KARNATAKA">COASTAL KARNATAKA</option>
+                    <option value="NORTH INTERIOR KARNATAKA">NORTH INTERIOR KARNATAKA</option>
+                    <option value="SOUTH INTERIOR KARNATAKA">SOUTH INTERIOR KARNATAKA</option>
+                    <option value="KERALA">KERALA</option>
+                    <option value="LAKSHADWEEP">LAKSHADWEEP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="number" class="form-control" id="year" name="year" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Visualize</button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

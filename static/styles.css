@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 2px solid lightblue; 
+  box-shadow: 20px 20px 30px rgba(0, 255, 255, 0.5); 
+  border-radius: 10px; 
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.card {
+  margin: 20px 0;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.5);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: cadetblue;
+}
+
+#india-map {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  .card {
+      margin: 10px 0;
+  }
+}
